@@ -43,6 +43,12 @@ __used __section("__versions") =
 	"__unregister_chrdev\0"
 	"\x18\x00\x00\x00\xc2\x9c\xc4\x13"
 	"_copy_from_user\0"
+	"\x14\x00\x00\x00\x92\x31\x83\x18"
+	"filp_open\0\0\0"
+	"\x18\x00\x00\x00\x3d\x73\xae\xe5"
+	"kernel_write\0\0\0\0"
+	"\x14\x00\x00\x00\x31\xb7\x42\x2d"
+	"filp_close\0\0"
 	"\x1c\x00\x00\x00\xcb\xf6\xfd\xf0"
 	"__stack_chk_fail\0\0\0\0"
 	"\x14\x00\x00\x00\xbb\x6d\xfb\xbd"
@@ -64,4 +70,4 @@ __used __section("__versions") =
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "48C322F66D0214E298B3AE3");
+MODULE_INFO(srcversion, "981F7C18B219D68EDEA1356");

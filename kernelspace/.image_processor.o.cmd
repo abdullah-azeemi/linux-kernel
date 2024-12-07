@@ -1027,6 +1027,289 @@ deps_/home/abdullah/Desktop/Image-Processor/kernelspace/image_processor.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
+  include/linux/file.h \
+  include/linux/syscalls.h \
+    $(wildcard include/config/FTRACE_SYSCALLS) \
+    $(wildcard include/config/CLONE_BACKWARDS) \
+    $(wildcard include/config/CLONE_BACKWARDS3) \
+    $(wildcard include/config/ARCH_SPLIT_ARG64) \
+    $(wildcard include/config/OLD_SIGSUSPEND) \
+    $(wildcard include/config/OLD_SIGSUSPEND3) \
+    $(wildcard include/config/ADVISE_SYSCALLS) \
+  include/trace/syscall.h \
+    $(wildcard include/config/HAVE_SYSCALL_TRACEPOINTS) \
+  include/linux/tracepoint.h \
+    $(wildcard include/config/ARCH_WANTS_NO_INSTR) \
+  include/linux/static_call.h \
+  include/linux/cpu.h \
+    $(wildcard include/config/GENERIC_CPU_DEVICES) \
+    $(wildcard include/config/PM_SLEEP_SMP) \
+    $(wildcard include/config/PM_SLEEP_SMP_NONZERO_CPU) \
+    $(wildcard include/config/ARCH_HAS_CPU_FINALIZE_INIT) \
+    $(wildcard include/config/CPU_MITIGATIONS) \
+  include/linux/node.h \
+    $(wildcard include/config/HMEM_REPORTING) \
+  include/linux/device.h \
+    $(wildcard include/config/HAS_IOMEM) \
+    $(wildcard include/config/GENERIC_MSI_IRQ) \
+    $(wildcard include/config/ENERGY_MODEL) \
+    $(wildcard include/config/PINCTRL) \
+    $(wildcard include/config/DMA_OPS) \
+    $(wildcard include/config/DMA_DECLARE_COHERENT) \
+    $(wildcard include/config/DMA_CMA) \
+    $(wildcard include/config/SWIOTLB) \
+    $(wildcard include/config/SWIOTLB_DYNAMIC) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_DEVICE) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
+    $(wildcard include/config/DMA_OPS_BYPASS) \
+    $(wildcard include/config/PM_SLEEP) \
+    $(wildcard include/config/OF) \
+    $(wildcard include/config/DEVTMPFS) \
+  include/linux/dev_printk.h \
+  include/linux/energy_model.h \
+  include/linux/sched/cpufreq.h \
+    $(wildcard include/config/CPU_FREQ) \
+  include/linux/sched/topology.h \
+    $(wildcard include/config/SCHED_DEBUG) \
+    $(wildcard include/config/SCHED_CLUSTER) \
+    $(wildcard include/config/SCHED_MC) \
+    $(wildcard include/config/CPU_FREQ_GOV_SCHEDUTIL) \
+  include/linux/sched/idle.h \
+  include/linux/sched/sd_flags.h \
+  include/linux/ioport.h \
+  include/linux/klist.h \
+  include/linux/pm.h \
+    $(wildcard include/config/VT_CONSOLE_SLEEP) \
+    $(wildcard include/config/CXL_SUSPEND) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/PM_CLK) \
+    $(wildcard include/config/PM_GENERIC_DOMAINS) \
+  include/linux/device/bus.h \
+    $(wildcard include/config/ACPI) \
+  include/linux/device/class.h \
+  include/linux/device/driver.h \
+  arch/x86/include/asm/device.h \
+  include/linux/pm_wakeup.h \
+  include/linux/cpuhotplug.h \
+    $(wildcard include/config/HOTPLUG_CORE_SYNC_DEAD) \
+  arch/x86/include/asm/static_call.h \
+  arch/x86/include/asm/text-patching.h \
+    $(wildcard include/config/UML_X86) \
+  include/linux/trace_events.h \
+    $(wildcard include/config/DYNAMIC_EVENTS) \
+    $(wildcard include/config/KPROBE_EVENTS) \
+    $(wildcard include/config/UPROBE_EVENTS) \
+  include/linux/ring_buffer.h \
+    $(wildcard include/config/RING_BUFFER_ALLOW_SWAP) \
+    $(wildcard include/config/RING_BUFFER) \
+  include/linux/mm.h \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_BITS) \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_COMPAT_BITS) \
+    $(wildcard include/config/ARCH_USES_HIGH_VMA_FLAGS) \
+    $(wildcard include/config/ARCH_HAS_PKEYS) \
+    $(wildcard include/config/PPC) \
+    $(wildcard include/config/PARISC) \
+    $(wildcard include/config/SPARC64) \
+    $(wildcard include/config/ARM64_MTE) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_MINOR) \
+    $(wildcard include/config/SHMEM) \
+    $(wildcard include/config/MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_SPECIAL) \
+    $(wildcard include/config/DEBUG_VM_RB) \
+    $(wildcard include/config/PAGE_POISONING) \
+    $(wildcard include/config/INIT_ON_ALLOC_DEFAULT_ON) \
+    $(wildcard include/config/INIT_ON_FREE_DEFAULT_ON) \
+    $(wildcard include/config/DEBUG_PAGEALLOC) \
+    $(wildcard include/config/ARCH_WANT_OPTIMIZE_DAX_VMEMMAP) \
+    $(wildcard include/config/HUGETLBFS) \
+    $(wildcard include/config/MAPPING_DIRTY_HELPERS) \
+  include/linux/page_ext.h \
+  include/linux/stacktrace.h \
+    $(wildcard include/config/ARCH_STACKWALK) \
+    $(wildcard include/config/STACKTRACE) \
+    $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT) \
+    $(wildcard include/config/STACKDEPOT_MAX_FRAMES) \
+    $(wildcard include/config/STACKDEPOT_ALWAYS_INIT) \
+  include/linux/page_ref.h \
+    $(wildcard include/config/DEBUG_PAGE_REF) \
+  include/linux/sizes.h \
+  include/linux/pgtable.h \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/ARCH_HAS_NONLEAF_PMD_YOUNG) \
+    $(wildcard include/config/ARCH_HAS_HW_PTE_YOUNG) \
+    $(wildcard include/config/GUP_GET_PXX_LOW_HIGH) \
+    $(wildcard include/config/ARCH_WANT_PMD_MKWRITE) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  include/linux/memremap.h \
+    $(wildcard include/config/DEVICE_PRIVATE) \
+    $(wildcard include/config/PCI_P2PDMA) \
+  include/linux/huge_mm.h \
+  include/linux/sched/coredump.h \
+    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
+  include/linux/vmstat.h \
+    $(wildcard include/config/VM_EVENT_COUNTERS) \
+    $(wildcard include/config/DEBUG_TLBFLUSH) \
+    $(wildcard include/config/PER_VMA_LOCK_STATS) \
+  include/linux/vm_event_item.h \
+    $(wildcard include/config/MEMORY_BALLOON) \
+    $(wildcard include/config/BALLOON_COMPACTION) \
+  include/linux/seq_file.h \
+  include/linux/string_helpers.h \
+  include/linux/ctype.h \
+  include/linux/string_choices.h \
+  include/linux/poll.h \
+  include/uapi/linux/poll.h \
+  arch/x86/include/generated/uapi/asm/poll.h \
+  include/uapi/asm-generic/poll.h \
+  include/uapi/linux/eventpoll.h \
+  include/linux/trace_seq.h \
+  include/linux/seq_buf.h \
+  include/linux/hardirq.h \
+  include/linux/context_tracking_state.h \
+    $(wildcard include/config/CONTEXT_TRACKING_USER) \
+    $(wildcard include/config/CONTEXT_TRACKING) \
+  include/linux/ftrace_irq.h \
+    $(wildcard include/config/HWLAT_TRACER) \
+    $(wildcard include/config/OSNOISE_TRACER) \
+  include/linux/vtime.h \
+    $(wildcard include/config/VIRT_CPU_ACCOUNTING) \
+    $(wildcard include/config/IRQ_TIME_ACCOUNTING) \
+  arch/x86/include/asm/hardirq.h \
+    $(wildcard include/config/KVM_INTEL) \
+    $(wildcard include/config/HAVE_KVM) \
+    $(wildcard include/config/X86_THERMAL_VECTOR) \
+    $(wildcard include/config/X86_MCE_THRESHOLD) \
+    $(wildcard include/config/X86_MCE_AMD) \
+    $(wildcard include/config/X86_HV_CALLBACK_VECTOR) \
+    $(wildcard include/config/HYPERV) \
+  include/linux/perf_event.h \
+    $(wildcard include/config/HAVE_HW_BREAKPOINT) \
+    $(wildcard include/config/FUNCTION_TRACER) \
+    $(wildcard include/config/CGROUP_PERF) \
+    $(wildcard include/config/GUEST_PERF_EVENTS) \
+  include/uapi/linux/perf_event.h \
+  include/uapi/linux/bpf_perf_event.h \
+  arch/x86/include/generated/uapi/asm/bpf_perf_event.h \
+  include/uapi/asm-generic/bpf_perf_event.h \
+  include/linux/ptrace.h \
+  include/linux/pid_namespace.h \
+    $(wildcard include/config/MEMFD_CREATE) \
+    $(wildcard include/config/PID_NS) \
+  include/linux/nsproxy.h \
+  include/linux/ns_common.h \
+  include/uapi/linux/ptrace.h \
+  include/linux/seccomp.h \
+    $(wildcard include/config/HAVE_ARCH_SECCOMP_FILTER) \
+    $(wildcard include/config/SECCOMP_FILTER) \
+    $(wildcard include/config/CHECKPOINT_RESTORE) \
+    $(wildcard include/config/SECCOMP_CACHE_DEBUG) \
+  include/uapi/linux/seccomp.h \
+  arch/x86/include/asm/seccomp.h \
+  arch/x86/include/asm/ia32_unistd.h \
+  include/asm-generic/seccomp.h \
+  arch/x86/include/asm/perf_event.h \
+    $(wildcard include/config/PERF_EVENTS_AMD_BRS) \
+  arch/x86/include/asm/stacktrace.h \
+  arch/x86/include/asm/cpu_entry_area.h \
+  arch/x86/include/asm/intel_ds.h \
+  arch/x86/include/asm/pgtable_areas.h \
+  arch/x86/include/asm/switch_to.h \
+  arch/x86/include/generated/asm/local64.h \
+  include/asm-generic/local64.h \
+  arch/x86/include/asm/local.h \
+  arch/x86/include/asm/hw_breakpoint.h \
+  arch/x86/include/uapi/asm/hw_breakpoint.h \
+  include/linux/kdebug.h \
+  arch/x86/include/asm/kdebug.h \
+  include/linux/ftrace.h \
+    $(wildcard include/config/HAVE_FUNCTION_GRAPH_RETVAL) \
+    $(wildcard include/config/DYNAMIC_FTRACE) \
+    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_ARGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_REGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_ARGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
+    $(wildcard include/config/STACK_TRACER) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_CALL_OPS) \
+    $(wildcard include/config/FUNCTION_GRAPH_RETVAL) \
+    $(wildcard include/config/FUNCTION_PROFILER) \
+  include/linux/trace_recursion.h \
+    $(wildcard include/config/FTRACE_RECORD_RECURSION) \
+  include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+    $(wildcard include/config/IRQ_TIMINGS) \
+  include/linux/irqreturn.h \
+  arch/x86/include/asm/irq.h \
+  arch/x86/include/asm/irq_vectors.h \
+    $(wildcard include/config/PCI_MSI) \
+  arch/x86/include/asm/sections.h \
+  include/asm-generic/sections.h \
+    $(wildcard include/config/HAVE_FUNCTION_DESCRIPTORS) \
+  include/linux/trace_clock.h \
+  arch/x86/include/asm/trace_clock.h \
+  include/linux/kallsyms.h \
+    $(wildcard include/config/KALLSYMS_ALL) \
+  arch/x86/include/asm/ftrace.h \
+    $(wildcard include/config/HAVE_FENTRY) \
+  include/linux/irq_work.h \
+    $(wildcard include/config/IRQ_WORK) \
+  arch/x86/include/asm/irq_work.h \
+  include/linux/jump_label_ratelimit.h \
+  include/linux/perf_regs.h \
+    $(wildcard include/config/HAVE_PERF_REGS) \
+  arch/x86/include/uapi/asm/perf_regs.h \
+  include/linux/cgroup.h \
+    $(wildcard include/config/DEBUG_CGROUP_REF) \
+    $(wildcard include/config/CGROUP_CPUACCT) \
+    $(wildcard include/config/SOCK_CGROUP_DATA) \
+    $(wildcard include/config/CGROUP_DATA) \
+    $(wildcard include/config/CGROUP_BPF) \
+  include/uapi/linux/cgroupstats.h \
+  include/uapi/linux/taskstats.h \
+  include/linux/user_namespace.h \
+    $(wildcard include/config/INOTIFY_USER) \
+    $(wildcard include/config/FANOTIFY) \
+    $(wildcard include/config/BINFMT_MISC) \
+    $(wildcard include/config/PERSISTENT_KEYRINGS) \
+  include/linux/kernel_stat.h \
+  include/linux/cgroup-defs.h \
+    $(wildcard include/config/CGROUP_NET_CLASSID) \
+    $(wildcard include/config/CGROUP_NET_PRIO) \
+  include/linux/u64_stats_sync.h \
+  include/linux/bpf-cgroup-defs.h \
+    $(wildcard include/config/BPF_LSM) \
+  include/linux/psi_types.h \
+  include/linux/kthread.h \
+  include/linux/cgroup_subsys.h \
+    $(wildcard include/config/CGROUP_DEVICE) \
+    $(wildcard include/config/CGROUP_FREEZER) \
+    $(wildcard include/config/CGROUP_HUGETLB) \
+    $(wildcard include/config/CGROUP_PIDS) \
+    $(wildcard include/config/CGROUP_RDMA) \
+    $(wildcard include/config/CGROUP_MISC) \
+    $(wildcard include/config/CGROUP_DEBUG) \
+  include/linux/cgroup_refcnt.h \
+  include/linux/security.h \
+    $(wildcard include/config/SECURITY_NETWORK) \
+    $(wildcard include/config/SECURITY_INFINIBAND) \
+    $(wildcard include/config/SECURITY_NETWORK_XFRM) \
+    $(wildcard include/config/SECURITY_PATH) \
+    $(wildcard include/config/IMA_LSM_RULES) \
+    $(wildcard include/config/SECURITYFS) \
+  include/linux/kernel_read_file.h \
+  include/linux/sockptr.h \
+  include/uapi/linux/lsm.h \
+  include/linux/lsm/selinux.h \
+    $(wildcard include/config/SECURITY_SELINUX) \
+  include/linux/lsm/smack.h \
+    $(wildcard include/config/SECURITY_SMACK) \
+  include/linux/lsm/apparmor.h \
+    $(wildcard include/config/SECURITY_APPARMOR) \
+  include/linux/lsm/bpf.h \
 
 /home/abdullah/Desktop/Image-Processor/kernelspace/image_processor.o: $(deps_/home/abdullah/Desktop/Image-Processor/kernelspace/image_processor.o)
 
