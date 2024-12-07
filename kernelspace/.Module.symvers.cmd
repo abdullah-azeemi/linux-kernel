@@ -1,0 +1,1 @@
+savedcmd_/home/abdullah/Desktop/Image-Processor/kernelspace/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/abdullah/Desktop/Image-Processor/kernelspace/Module.symvers -T /home/abdullah/Desktop/Image-Processor/kernelspace/modules.order -i Module.symvers -e 
